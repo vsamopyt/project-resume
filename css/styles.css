@@ -467,13 +467,14 @@ border: none;
   position: fixed;
   top:0;
   right:0;
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
+  padding-top: 24px;
   border: 1px;
   width:100%;
   min-height: 100vh;
-  background-color:#f2f2f2;
-  /* background:  url(../images/freepik-export-20241002125122k80J.jpeg); */
+  /* background-color:#f2f2f2; */
+  background:  url(../images/freepik-export-20241002125122k80J.jpeg);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
