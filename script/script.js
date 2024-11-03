@@ -1,4 +1,5 @@
-import * as scrollToUp from "./scroll-to-up-btn.js"
+import {setupScrollToUpBtnListeners}  from "./scroll-to-up-btn.js";
+import {setupModalEventListeners} from "./modal-window.js";
 
-scrollToUp.showButton();
-scrollToUp.scrollUp();
+setupModalEventListeners()
+setupScrollToUpBtnListeners()
