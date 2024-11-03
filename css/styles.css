@@ -66,8 +66,23 @@ img {
   height: auto;
 }
 
+/* button {
+  cursor: pointer;
+} */
+
 button {
   cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus,
+button:active {
+  outline: none;
+}
+
+button:focus:not(:focus-visible) {
+  outline: none;
 }
 
 /* GENERAL STYLES */
