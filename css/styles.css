@@ -423,6 +423,15 @@ a {
 
 .icon {
   fill: var(--color-general-btn);
+  
+}
+
+.btm-icon-arrow {
+
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+
 }
 
 .btn-scroll-to-top.show {
