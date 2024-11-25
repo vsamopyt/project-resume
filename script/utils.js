@@ -5,9 +5,11 @@ export const positionElementFromRight = (element) => {
 
   if (innerWidth <= 380) {
     positionRight = 5;
-  } else if (innerWidth >= 380 && window.innerWidth <= 760) {
+  } else if (innerWidth >= 380 && window.innerWidth <= 576) {
     positionRight = innerWidth / 2 - 320 / 2 - 30;
-  } else if (innerWidth >= 761 && innerWidth <= 999) {
+  } else if (innerWidth >= 577 && window.innerWidth <= 760) {
+    positionRight = innerWidth / 2 - 500 / 2 - 30;
+  }  else if (innerWidth >= 761 && innerWidth <= 999) {
     positionRight = innerWidth / 2 - 760 / 2 + 10;
   } else {
     positionRight = innerWidth / 2 - 1000 / 2 + 20;

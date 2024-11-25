@@ -29,8 +29,15 @@ window.addEventListener('resize', () => {
   if (window.innerWidth <= 380) {
     positioonRight = 5;
   }
-  if (window.innerWidth >= 380 && window.innerWidth <= 760) {
+  if (window.innerWidth >= 380 && window.innerWidth <= 576) {
     positioonRight = window.innerWidth / 2 - 320 / 2 - 30;
+    console.log("aaaa");
+    
+  }
+  if (window.innerWidth >= 577 && window.innerWidth <= 760) {
+    positioonRight = window.innerWidth / 2 - 576 / 2 + 30;
+    console.log("ddddddd");
+    
   }
   if (window.innerWidth >= 790) {
     positioonRight = window.innerWidth / 2 - 720 / 2 - 30;
