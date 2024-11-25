@@ -280,11 +280,17 @@ a {
 }
 
 /* HARD SKILLS */
+.item-hardskills {
+  font-family: var(--font-family-text);
+  font-size: 16px;
+}
 
 /* PROJECTS */
 
 .link-projects {
   display: block;
+  font-family: var(--font-family-text);
+
 }
 
 .link-projects,
@@ -314,6 +320,10 @@ a {
 
 .text-work {
   margin-top: 1.2em;
+}
+
+.item-work-profession-experience {
+  font-family: var(--font-family-text);
 }
 
 /* FOOTER */
