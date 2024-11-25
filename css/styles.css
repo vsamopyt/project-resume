@@ -575,7 +575,7 @@ a {
 /* @media (width >= 760px) { */
 
 /* @media (width >= 576px) { */
- @media (min-width: 576px) and (max-width:760px) { 
+ @media (min-width: 576px) { 
   html {
     font-size: 18px;
   }
@@ -654,7 +654,7 @@ a {
 
 
 /* @media (width >= 760px) { */
-@media (min-width: 761px) and (max-width:999px) { 
+@media (min-width: 761px)  { 
   html {
     font-size: 18px;
   }
