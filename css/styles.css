@@ -80,7 +80,6 @@ button:focus,
 button:active {
   outline: none;
   box-shadow: none;
-  /* background-color: transparent !important; */
   background-color: transparent;
 }
 
@@ -89,7 +88,6 @@ button:active {
 body {
   padding-top: 20px;
   padding-bottom: 20px;
-  /* background-color: #f2f2f2;  */
   background: url(../images/freepik-export-20241002125122k80J.jpeg);
 }
 
@@ -182,9 +180,12 @@ a {
 .list-projects-details,
 .list-work-profession-experience,
 .list-languages {
-  list-style: inside;
-  list-style-position: outside
+  padding-left: 20px;
+  list-style: outside;
+  list-style-position: outside;
 }
+
+
 
 .item-span-name {
   display: inline-block;
@@ -325,6 +326,12 @@ a {
 
 .item-work-profession-experience {
   font-family: var(--font-family-text);
+}
+
+/* EDUCATION */
+.text-education-period {
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-text);
 }
 
 /* FOOTER */
@@ -579,25 +586,77 @@ a {
   overflow-y: hidden;
 }
 
-/* SCREENS */
-/* @media (width >= 576px) {
-  .container {
-  
-    max-width: 576px;
-    width: 100%;
-    padding-inline: 20px;
-    margin-inline: auto;
-  }
-  .address-header::before,
-  .address-header::after {
-    max-width: 536px;
-  }
+
+/* FOCUS */
+
+  /* FOOTER */
+
+  .footer-address-list-socials:focus {
+    fill: var(--color-footer-accent);
+  } 
 
 
-} */
-/* @media (width >= 760px) { */
+  .address-footer-info:focus {
+    color: var(--color-footer-accent);
+  } 
 
-/* @media (width >= 576px) { */
+
+  .address-footer-info:focus .icon {
+    fill: var(--color-footer-accent);
+  } 
+
+  .footer-address-list-socials .icon:focus {
+    fill: var(--color-footer-accent);
+  } 
+
+  /* MODAL */
+
+  .address-modal-info:focus {
+    color: var(--color-footer-accent);
+  } 
+
+  .address-modal-info:focus svg {
+    fill: var(--color-footer-accent);
+  } 
+
+  .backdrop-item-link:focus {
+    text-transform: uppercase;
+  } 
+
+  .btn-header-menu:focus {
+    transform: scale(0.95);
+  } 
+
+
+  .btn-header-menu:focus .icon {
+    fill: var(--color-footer-accent);
+  } 
+
+
+  .btn-modal-close:focus {
+    fill: var(--color-footer-accent);
+    transform: scale(0.95);
+  } 
+
+  .modal-address-list-socials .icon:focus {
+    fill: var(--color-footer-accent);
+  } 
+
+  /* SCROLL TO TOP BTN */
+
+
+  .btn-scroll-to-top:focus {
+    transform: scale(0.95);
+  } 
+
+
+  .btn-scroll-to-top:focus .icon {
+    fill: var(--color-accent);
+  } 
+
+
+/* MEDIA */
+
  @media (min-width: 576px) { 
   html {
     font-size: 18px;
@@ -757,9 +816,6 @@ a {
 }
 
 
-
-/* 
-@media (width >= 1000px) { */
 @media (min-width: 1000px) {
   .wrapper {
     max-width: 1000px;
@@ -772,79 +828,152 @@ a {
     padding-top: 55px;
   }
 
+  /* .header a:hover {
+    color: var(--color-accent);
+  } */
+
+  /* FOOTER */
+  /* .footer-address-list-socials:hover,
+  .footer-address-list-socials:focus {
+    fill: var(--color-footer-accent);
+  } */
+
+  /* .address-footer-info:hover,
+  .address-footer-info:focus {
+    color: var(--color-footer-accent);
+  } */
+
+  /* .address-footer-info:hover .icon,
+  .address-footer-info:focus .icon {
+    fill: var(--color-footer-accent);
+  } */
+
+  /* .footer-address-list-socials .icon:hover,
+  .footer-address-list-socials .icon:focus {
+    fill: var(--color-footer-accent);
+  } */
+
+  /* MODAL */
+
+  
+  /* .address-modal-info:hover,
+  .address-modal-info:focus {
+    color: var(--color-footer-accent);
+  } */
+
+  /* .address-modal-info:hover svg,
+  .address-modal-info:focus svg {
+    fill: var(--color-footer-accent);
+  } */
+
+  /* .backdrop-item-link:hover,
+  .backdrop-item-link:focus {
+    text-transform: uppercase;
+  } */
+
+  /* .btn-header-menu:hover,
+  .btn-header-menu:focus {
+    transform: scale(0.95);
+  } */
+
+  /* .btn-header-menu:hover .icon,
+  .btn-header-menu:focus .icon {
+    fill: var(--color-footer-accent);
+  } */
+
+  /* .btn-modal-close:hover,
+  .btn-modal-close:focus {
+    fill: var(--color-footer-accent);
+    transform: scale(0.95);
+  } */
+/* 
+  .modal-address-list-socials .icon:hover,
+  .modal-address-list-socials .icon:focus {
+    fill: var(--color-footer-accent);
+  } */
+
+  /* SCROLL TO TOP BTN */
+
+  /* .btn-scroll-to-top:hover,
+  .btn-scroll-to-top:focus {
+    transform: scale(0.95);
+  } */
+
+  /* .btn-scroll-to-top:hover .icon,
+  .btn-scroll-to-top:focus .icon {
+    fill: var(--color-accent);
+  } */
+
+  /* .btn-scroll-to-top:hover {
+  transform: scale(0.95);
+} */
+
+/* .btn-scroll-to-top:hover .icon {
+  fill: var(--color-accent);
+} */
+}
+
+
+@media (hover: hover) {
   .header a:hover {
     color: var(--color-accent);
   }
 
   /* FOOTER */
-  .footer-address-list-socials:hover,
-  .footer-address-list-socials:focus {
+  .footer-address-list-socials:hover {
     fill: var(--color-footer-accent);
   }
 
-  .address-footer-info:hover,
-  .address-footer-info:focus {
+  .address-footer-info:hover {
     color: var(--color-footer-accent);
   }
 
-  .address-footer-info:hover .icon,
-  .address-footer-info:focus .icon {
+  .address-footer-info:hover .icon{
     fill: var(--color-footer-accent);
   }
 
-  .footer-address-list-socials .icon:hover,
-  .footer-address-list-socials .icon:focus {
+  .footer-address-list-socials .icon:hover {
     fill: var(--color-footer-accent);
   }
 
   /* MODAL */
-
   
-  .address-modal-info:hover,
-  .address-modal-info:focus {
+  .address-modal-info:hover {
     color: var(--color-footer-accent);
   }
 
-  .address-modal-info:hover svg,
-  .address-modal-info:focus svg {
+  .address-modal-info:hover svg {
     fill: var(--color-footer-accent);
   }
 
-  .backdrop-item-link:hover,
-  .backdrop-item-link:focus {
+  .backdrop-item-link:hover {
     text-transform: uppercase;
   }
 
-  .btn-header-menu:hover,
-  .btn-header-menu:focus {
+  .btn-header-menu:hover{
     transform: scale(0.95);
   }
 
-  .btn-header-menu:hover .icon,
-  .btn-header-menu:focus .icon {
+  .btn-header-menu:hover .icon {
     fill: var(--color-footer-accent);
   }
 
-  .btn-modal-close:hover,
-  .btn-modal-close:focus {
+  .btn-modal-close:hover {
     fill: var(--color-footer-accent);
     transform: scale(0.95);
   }
 
-  .modal-address-list-socials .icon:hover,
-  .modal-address-list-socials .icon:focus {
+  .modal-address-list-socials .icon:hover {
     fill: var(--color-footer-accent);
   }
 
   /* SCROLL TO TOP BTN */
 
-  .btn-scroll-to-top:hover,
-  .btn-scroll-to-top:focus {
+  .btn-scroll-to-top:hover {
     transform: scale(0.95);
   }
 
-  .btn-scroll-to-top:hover .icon,
-  .btn-scroll-to-top:focus .icon {
+  .btn-scroll-to-top:hover .icon {
     fill: var(--color-accent);
   }
 
@@ -854,5 +983,96 @@ a {
 
 .btn-scroll-to-top:hover .icon {
   fill: var(--color-accent);
+}
+
+}
+
+
+@media (hover: none) and (pointer: coarse) {
+  .header a:active {
+    color: var(--color-accent);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* FOOTER */
+  .footer-address-list-socials:active {
+    fill: var(--color-footer-accent);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .address-footer-info:active {
+    color: var(--color-footer-accent);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .address-footer-info:active .icon{
+    fill: var(--color-footer-accent);
+  
+  }
+
+  .footer-address-list-socials .icon:active {
+    fill: var(--color-footer-accent);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* MODAL */
+
+  
+  .address-modal-info:active {
+    color: var(--color-footer-accent);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .address-modal-info:active svg {
+    fill: var(--color-footer-accent);
+ 
+  }
+
+  .backdrop-item-link:active {
+    text-transform: uppercase;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .btn-header-menu:active {
+    transform: scale(0.95);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .btn-header-menu:active .icon {
+    fill: var(--color-footer-accent);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .btn-modal-close:active {
+    fill: var(--color-footer-accent);
+    transform: scale(0.95);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .modal-address-list-socials .icon:active {
+    fill: var(--color-footer-accent);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* SCROLL TO TOP BTN */
+
+  .btn-scroll-to-top:active {
+    transform: scale(0.95);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .btn-scroll-to-top:active .icon {
+    fill: var(--color-accent);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .btn-scroll-to-top:active {
+  transform: scale(0.95);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn-scroll-to-top:active .icon {
+  fill: var(--color-accent);
+
 }
 }
