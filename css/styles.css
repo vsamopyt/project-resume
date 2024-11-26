@@ -410,8 +410,9 @@ a {
   justify-content: center;
   align-items: center;
   margin-inline: auto;
-  width: 34px;
-  height: 34px;
+  min-width: 34px;
+  aspect-ratio: 1/1;
+  /* height: 34px; */ 
   border-radius: 50%;
   color: var(--color-general-btn);
   background-color: var(--color-bg-btn);
@@ -427,9 +428,9 @@ a {
 }
 
 .btm-icon-arrow {
-    width: 24px;
-    height: 24px;
-    display: inline-block;
+    width: 20px;
+    height: 20px;
+    /* display: inline-block; */
 
 }
 
@@ -438,13 +439,7 @@ a {
   visibility: visible;
 }
 
-.btn-scroll-to-top:hover {
-  transform: scale(0.95);
-}
 
-.btn-scroll-to-top:hover .icon {
-  fill: var(--color-accent);
-}
 
 /* MODAL WINDOW */
 
@@ -462,12 +457,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* place-items: center; */
   min-width: 34px;
  aspect-ratio: 1/1;
  padding: 0;
-  /* min-height: 40px; */ 
-  /* border: none; */
   border-radius: 5px;
   background-color: var(--color-bg-btn);
   border: 1px solid var(--color-general-btn);
@@ -477,7 +469,7 @@ a {
 .btn-icon-menu {
   width: 24px;
   height: 24px;
-  /* display: inline-block; */
+
 }
 
 .btn-header-menu:focus,
@@ -853,4 +845,12 @@ a {
   .btn-scroll-to-top:focus .icon {
     fill: var(--color-accent);
   }
+
+  .btn-scroll-to-top:hover {
+  transform: scale(0.95);
+}
+
+.btn-scroll-to-top:hover .icon {
+  fill: var(--color-accent);
+}
 }
