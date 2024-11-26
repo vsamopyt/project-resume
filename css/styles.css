@@ -183,6 +183,7 @@ a {
 .list-work-profession-experience,
 .list-languages {
   list-style: inside;
+  list-style-position: outside
 }
 
 .item-span-name {
@@ -410,6 +411,7 @@ a {
   justify-content: center;
   align-items: center;
   margin-inline: auto;
+  padding: 0;
   min-width: 34px;
   aspect-ratio: 1/1;
   /* height: 34px; */ 
