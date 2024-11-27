@@ -589,6 +589,10 @@ a {
 
 /* FOCUS */
 
+.header a:hover {
+  color: var(--color-accent);
+}
+
   /* FOOTER */
 
   .footer-address-list-socials:focus {
