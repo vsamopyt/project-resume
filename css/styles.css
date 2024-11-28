@@ -1,9 +1,13 @@
+/* imports */
+@import url('./fonts/fonts.css');
+
 :root {
   --font-family-headline: 'Varela', sans-serif;
   --font-family-title: 'Varela', sans-serif;
   --font-family-subtitle: 'Varela', sans-serif;
   --font-family-text: 'Hind Madurai', sans-serif;
   --font-family-headline-text: 'Rhodium Libre', serif;
+  --font-family-address-text: "Roboto", sans-serif;
 
   --font-size-headline: 1.6rem;
   --font-size-title: 1rem;
@@ -32,6 +36,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  font-weight: 400;
 }
 
 h1,
@@ -241,6 +246,8 @@ a {
 }
 .address-header-info {
   margin-inline: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-style: italic;
   text-align: center;
   color: var(--color-titles);
 }
@@ -297,7 +304,7 @@ a {
 /* HARD SKILLS */
 .item-hardskills {
   font-family: var(--font-family-text);
-  font-size: 16px;
+  font-size: var(--font-size-text);
 }
 
 /* PROJECTS */
