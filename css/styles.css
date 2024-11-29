@@ -11,7 +11,7 @@
 
   --font-size-headline: 1.6rem;
   --font-size-title: 1rem;
-  --font-size-subtitle: 0.9rem;
+  --font-size-subtitle: 1rem;
   --font-size-text: 1rem;
 
   --color-titles: rgba(38, 41, 42, 0.819);
@@ -246,7 +246,7 @@ a {
 }
 .address-header-info {
   margin-inline: auto;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
   font-style: italic;
   text-align: center;
   color: var(--color-titles);
@@ -327,6 +327,10 @@ a {
 .link-projects {
   display: inline-block;
   transition: color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subtitle-projects {
+  text-transform: uppercase;
 }
 
 
