@@ -1,4 +1,4 @@
-# ![favicon](https://github.com/user-attachments/assets/a9ab21ce-9d1d-4ab6-9de5-655a3a1d172f) Resume Fullstack Developer Viktor Samopiat 
+# ![favicon](https://github.com/user-attachments/assets/a9ab21ce-9d1d-4ab6-9de5-655a3a1d172f) Resume: Fullstack Developer Viktor Samopiat 
 
 
 ## 🖍 Description
