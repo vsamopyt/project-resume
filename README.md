@@ -3,7 +3,25 @@
 
 ## 🖍 Description
 ### General
-I would like to introduce you to the project "Resume Fullstack Developer Viktor Samopiat ", 
+I would like to introduce the project "Resume: Full Stack Developer Viktor Samopiat."
+
+This is a single-page website designed to resemble a paper document. The site features a fully responsive layout, ensuring adaptability across mobile devices, tablets, and desktops.
+
+#### Key features include:
+![MOBILE](https://img.shields.io/badge/Adaptive_design:-blue)
+
+The layout automatically adjusts to provide an optimal viewing experience on any device.
+
+![MOBILE](https://img.shields.io/badge/Burger_Menu::-blue)
+
+Located in the top-right corner, it opens a modal window with easy navigation between sections of the document.
+
+![MOBILE](https://img.shields.io/badge/Scroll_to_Top_Button:-blue)
+
+Positioned in the bottom-right corner for quick navigation back to the top of the page.
+
+This project combines simplicity with functionality, offering an elegant digital representation of a traditional resume.
+
 ### Web design
 #### Mobile version
 ![MOBILE](https://img.shields.io/badge/Mobile-from_320px_to_575px-blue)
@@ -65,7 +83,7 @@ To set up the Advice Generator Application locally, follow these steps:
 1. Clone the GitHub repository to your local machine:
     
     ```
-    git clone https://github.com/vsamopyt/project-travel-truck.git
+   https://github.com/vsamopyt/project-resume.git
     ```
     
 
