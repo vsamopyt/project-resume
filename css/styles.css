@@ -672,6 +672,22 @@ position: relative;
 
 /*   end button dark-light theme */
 
+/* selected */
+.languages-select {
+  padding-inline: 4px;
+ padding-bottom: 2px;
+  font-size: 16px;
+  border: 1px solid var(--color-general-btn);
+  border-radius: 5px;
+  color: var(--color-general-btn);
+  background-color: transparent;
+  cursor:pointer;
+}
+
+.languages-select option {
+  background-color: var(--color-bg);;
+}
+
 
 .backdrop-item:not(:last-child) {
   margin-bottom: 1em;
@@ -715,9 +731,9 @@ position: relative;
 
 /* FOCUS */
 
-.header a:hover {
+/* .header a:hover {
   color: var(--color-accent);
-}
+} */
 
 .subtitle-projects:focus,
 .link-projects:focus {
@@ -773,6 +789,13 @@ position: relative;
 
 .modal-address-list-socials .icon:focus {
   fill: var(--color-footer-accent);
+}
+
+.languages-select:focus {
+  border: 1px solid var(--color-footer-accent);
+  color: var(--color-footer-accent);
+  outline: none;
+
 }
 
 /* SCROLL TO TOP BTN */
@@ -904,7 +927,8 @@ position: relative;
   .container-summary-img {
     float: right;
     margin-left: 24px;
-    min-width: 240px;
+    min-width: 200px;
+    /* max-width:100%; */
     margin-bottom: 0px;
     order: 1;
   }
@@ -1060,6 +1084,12 @@ position: relative;
     fill: var(--color-footer-accent);
   }
 
+  .languages-select:hover {
+    border: 1px solid var(--color-footer-accent);
+    color: var(--color-footer-accent);
+  }
+
+
   /* SCROLL TO TOP BTN */
 
   .btn-scroll-to-top:hover {
@@ -1147,6 +1177,11 @@ position: relative;
   .modal-address-list-socials .icon:active {
     fill: var(--color-footer-accent);
     -webkit-tap-highlight-color: transparent;
+  }
+
+  .languages-select:active {
+    border: 1px solid var(--color-footer-accent);
+    color: var(--color-footer-accent);
   }
 
   /* SCROLL TO TOP BTN */
