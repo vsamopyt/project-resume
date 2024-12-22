@@ -32,10 +32,7 @@
 }
 
 body.dark-theme {
-  /* --color-bg: url(../images/dark-abstract-background.jpg);
-  --color-bg-wrapper:  url(../images/dark-abstract-background.jpg); */
   --color-bg: #0f0f0f;
-  /* --color-bg-wrapper: #0f0f0f; */
   --color-bg-wrapper:#373737;
   --color-titles:#f4f6f8;
   --color-subtitles:#c2c5cd;
@@ -115,9 +112,6 @@ button:active {
 /* GENERAL STYLES */
 
 body {
-  /* padding-top: 20px;
-  padding-bottom: 20px; */
-  /* background: url(../images/freepik-export-20241002125122k80J.jpeg); */
   background: var(--color-bg);
 }
 
@@ -173,15 +167,10 @@ body {
   color: var(--color-subtitles);
 }
 
-/* .subtitle {
-position: relative;
-} */
-
 .subtitle-projects,
 .link-projects {
   position: relative;
 }
-
 
 .item {
   color: var(--color-text);
@@ -191,9 +180,6 @@ span {
   font-family: var(--font-family-text);
 }
 
-/* a {
-  color: var(--color-accent);
-} */
 
 .item:not(:last-of-type) {
   margin-bottom: 0.5em;
@@ -235,8 +221,7 @@ span {
 .wrapper {
   width: 100%;
   margin-inline: auto;
-  /* background: url(../images/freepik-export-20241002125122k80J.jpeg); */
-  background: var(--color-bg-wrapper)
+   background: var(--color-bg-wrapper)
 }
 
 /* Header */
@@ -505,6 +490,7 @@ position: relative;
 
 .icon {
   fill: var(--color-general-btn);
+  transition: fill 0.3s ease;
 }
 
 .btm-icon-arrow {
@@ -563,7 +549,6 @@ position: relative;
   border: 1px;
   width: 100%;
   min-height: 100vh;
-  /* background: url(../images/freepik-export-20241002125122k80J.jpeg); */
   background:   var(--color-bg);
   opacity: 0;
   visibility: hidden;
@@ -607,14 +592,15 @@ position: relative;
 }
 
 .backdrop-item-link {
-  transition: uppercase 0.3s ease;
+  transition: color 0.3s ease;
+  
 }
 
 
 .modal-window-btns-wraper {
-  margin-bottom: 12px;
+  margin-bottom: 32px;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
   gap:12px;
 }
@@ -623,8 +609,6 @@ position: relative;
 .btn-modal-close {
   display: flex;
   padding: 0;
-  /* margin-left: auto; */
-  /* margin-bottom: 10px; */
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -635,9 +619,6 @@ position: relative;
 
 /* Button dark-light theme */
 .btn-two-theme {
-  /* position: fixed;
-  top: 40px;
-  right: 80px; */
   padding: 0;
   display: flex;
   justify-content: center;
@@ -646,8 +627,13 @@ position: relative;
   aspect-ratio: 1/1;
   border: 2px solid var(--color-general-btn);
   background-color: transparent;
-  /* border: 1px solid black; */
   border-radius: 50%;
+  /* transition: border 10s ease, transform 0.3 ease; */
+  transition: border 0.3s ease, transform 0.3s ease;
+}
+
+.btn-two-theme:hover .btn-two-theme-icon {
+  transition: fill 0.3s ease, transform 0.3s ease;
 }
 
 .btn-two-theme-icon-dark {
@@ -665,7 +651,6 @@ position: relative;
 }
 
 .btn-two-theme.darkBtn {
-  /* background-color: rgb(247, 243, 243); */
   background-color: transparent;
   border: 2px solid var(--color-general-btn);;
 }
@@ -682,12 +667,18 @@ position: relative;
   color: var(--color-general-btn);
   background-color: transparent;
   cursor:pointer;
+  transition: color 0.3s ease, border 0.3s ease;
 }
 
 .languages-select option {
-  background-color: var(--color-bg);;
+  background-color:var(--color-bg-wrapper);
 }
 
+
+.modal-navigation-wraper {
+  display: flex;
+  gap: 12px;
+}
 
 .backdrop-item:not(:last-child) {
   margin-bottom: 1em;
@@ -695,6 +686,7 @@ position: relative;
 
 .backdrop-item-link {
   color: var(--color-text);
+  transition: textTransform 20s ease,;
 }
 
 .backdrop-list-sections {
@@ -928,7 +920,6 @@ position: relative;
     float: right;
     margin-left: 24px;
     min-width: 200px;
-    /* max-width:100%; */
     margin-bottom: 0px;
     order: 1;
   }
@@ -974,13 +965,6 @@ position: relative;
 
 @media (hover: hover) {
 
-  /* .address-header-wrapper:hover {
-    
-    color: var(--color-accent);
-   
-  } */
-
-
   .header a:hover {
     color: var(--color-accent);
 
@@ -1018,11 +1002,6 @@ position: relative;
   
   }
 
-  /* .subtitle-projects:hover,
-  .link-projects:hover {
-    color: var(--color-titles);
-  } */
-
 
   /* FOOTER */
   .footer-address-list-socials:hover {
@@ -1053,8 +1032,9 @@ position: relative;
   }
 
   .backdrop-item-link:hover {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: var(--color-footer-accent);
+    animation: textTransform 6s infinite;
   }
 
   .btn-header-menu:hover {
@@ -1067,12 +1047,12 @@ position: relative;
 
   .btn-two-theme:hover {
     border: 2px solid var(--color-footer-accent);
-    transform: scale(0.95);
+ 
   }
 
   .btn-two-theme:hover .btn-two-theme-icon {
    fill: var(--color-footer-accent);
-    transform: scale(0.95);
+    transform: scale(0.90);
   }
 
   .btn-modal-close:hover {
@@ -1203,5 +1183,17 @@ position: relative;
 
   .btn-scroll-to-top:active .icon {
     fill: var(--color-accent);
+  }
+}
+
+
+@keyframes textTransform {
+  0%, 50% {
+    text-transform: uppercase; /* Верхний регистр */
+    opacity: 1;
+  }
+  50.01%, 100% {
+    text-transform: lowercase; /* Нижний регистр */
+    opacity: 0.5;
   }
 }
